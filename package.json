@@ -1,0 +1,20 @@
+{
+  "name": "electron-cross-platform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron .",
+    "build-osx": "electron-packager ./src --app-version=0.0.1 --platform darwin --icon ./assets/logo.icns --out ./dist --overwrite",
+    "build-linux": "electron-packager ./src --app-version=0.0.1 --platform linux --icon ./assets/logo.png --out ./dist --overwrite",
+    "build-win32": "electron-packager ./src --app-version=0.0.1 --platform win32 --icon ./assets/logo.ico --out ./dist --overwrite",
+    "build-all": "electron-packager ./src --app-version=0.0.1 --platform all --icon ./assets/logo --out ./dist --overwrite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^7.1.1",
+    "electron-packager": "^14.1.0"
+  }
+}
